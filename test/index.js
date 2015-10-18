@@ -1,3 +1,5 @@
+'use strict';
+
 const path = require('path');
 const fs = require('fs');
 const assert = require('assert');
@@ -15,8 +17,8 @@ describe('remove react propTypes', () => {
       const fixtureDir = path.join(fixturesDir, caseName);
       const actual = babel.transformFileSync(path.join(fixtureDir, 'actual.js'), {
         plugins: [
-          reactPlugin
-        ]
+          reactPlugin,
+        ],
       }).code;
       const expected = fs.readFileSync(path.join(fixtureDir, 'expected.js')).toString();
 
