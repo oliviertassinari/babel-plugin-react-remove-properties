@@ -1,0 +1,12 @@
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# npm
+/node_modules
+
+# build
+/lib
+
+# log
+*.log
