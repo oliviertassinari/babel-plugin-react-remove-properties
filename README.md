@@ -1,5 +1,6 @@
 ## Babel plugin for removing React properties
 
+[![Build Status](https://travis-ci.org/oliviertassinari/babel-plugin-react-remove-properties.svg?branch=master)](https://travis-ci.org/oliviertassinari/babel-plugin-react-remove-properties)
 [![npm version](https://img.shields.io/npm/v/babel-plugin-react-remove-properties.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-react-remove-properties)
 [![npm downloads](https://img.shields.io/npm/dm/babel-plugin-react-remove-properties.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-react-remove-properties)
 
