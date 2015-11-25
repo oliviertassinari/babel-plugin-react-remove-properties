@@ -1,7 +1,5 @@
-"use strict";
-
 React.createClass({
-  render: function render() {
+  render: function () {
     return React.createElement(
       "div",
       { className: "bar" },
@@ -9,4 +7,3 @@ React.createClass({
     );
   }
 });
-

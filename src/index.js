@@ -1,13 +1,13 @@
 'use strict';
 
-module.exports = function({Plugin}) {
-  return new Plugin('react-remove-properties', {
+module.exports = function() {
+  return {
     visitor: {
-      JSXIdentifier(node) {
-        if (node.name === 'data-test') {
-          this.parentPath.dangerouslyRemove();
+      JSXIdentifier: function(path) {
+        if (path.node.name === 'data-test') {
+          path.parentPath.remove();
         }
       },
     },
-  });
+  };
 };
