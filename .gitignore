@@ -10,3 +10,6 @@
 
 # log
 *.log
+
+# OS files
+.DS_STORE
