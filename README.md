@@ -10,7 +10,7 @@ This is useful when using selectors like data-test to run selenium test. Those p
 
 **In**
 ```js
-const Foo = React.createClass({
+class Foo extends React.Component {
   render() {
     return (
       <div className="bar" data-test="thisIsASelectorForSelenium">
@@ -18,12 +18,12 @@ const Foo = React.createClass({
       </div>
     );
   }
-});
+}
 ```
 
 **Out**
 ```js
-const Foo = React.createClass({
+class Foo extends React.Component {
   render() {
     return (
       <div className="bar">
@@ -31,7 +31,7 @@ const Foo = React.createClass({
       </div>
     );
   }
-});
+}
 ```
 
 ## Installation
@@ -46,8 +46,8 @@ $ npm install --save-dev babel-plugin-react-remove-properties
 
 **.babelrc**
 
+without options
 ```js
-// without options
 {
   "env": {
     "production": {
@@ -55,8 +55,10 @@ $ npm install --save-dev babel-plugin-react-remove-properties
     }
   }
 }
+```
 
-// with options
+with options
+```js
 {
   "env": {
     "production": {
