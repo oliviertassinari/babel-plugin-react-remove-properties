@@ -46,7 +46,7 @@ $ npm install --save-dev babel-plugin-react-remove-properties
 
 **.babelrc**
 
-```json
+```js
 // without options
 {
   "env": {
@@ -60,7 +60,7 @@ $ npm install --save-dev babel-plugin-react-remove-properties
 {
   "env": {
     "production": {
-      "plugins": ["react-remove-properties", {property: "data-test"}]
+      "plugins": ["react-remove-properties", {"property": "data-test"}]
     }
   }
 }
