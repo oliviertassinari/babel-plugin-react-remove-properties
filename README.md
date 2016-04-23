@@ -37,7 +37,7 @@ class Foo extends React.Component {
 ## Installation
 
 ```sh
-$ npm install --save-dev babel-plugin-react-remove-properties
+npm install --save-dev babel-plugin-react-remove-properties
 ```
 
 ## Usage
@@ -71,7 +71,7 @@ with options
 #### Via CLI
 
 ```sh
-$ babel --plugins react-remove-properties script.js
+babel --plugins react-remove-properties script.js
 ```
 
 #### Via Node API
