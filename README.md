@@ -68,6 +68,18 @@ with options
 }
 ```
 
+the options can also accepts an array of property names
+
+```js
+{
+  "env": {
+    "production": {
+      "plugins": ["react-remove-properties", {"properties": ["data-test", "data-foo"]}]
+    }
+  }
+}
+```
+
 #### Via CLI
 
 ```sh
