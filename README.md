@@ -68,7 +68,7 @@ with options
 }
 ```
 
-the options can also accepts an array of property names
+the options also accepts an array of property names
 
 ```js
 {
