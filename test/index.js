@@ -12,7 +12,7 @@ function trim(str) {
 
 function getPluginOptionsForDirectory(directory, filename = 'options.json') {
   try {
-    return require(directory + '/' + filename);
+    return require(`${directory}/${filename}`);
   } catch (e) {
     return defaultPluginOptions;
   }

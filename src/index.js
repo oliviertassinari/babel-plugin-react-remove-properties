@@ -14,13 +14,13 @@ export default function() {
         }
 
         path.traverse({
-          JSXIdentifier(path) {
-            if (properties.indexOf(path.node.name) > -1) {
-              path.parentPath.remove();
+          JSXIdentifier(path2) {
+            if (properties.indexOf(path2.node.name) > -1) {
+              path2.parentPath.remove();
             }
           },
         });
-      }
+      },
     },
   };
-};
+}
