@@ -6,6 +6,12 @@ export default function() {
         const properties = state.opts.properties || [];
 
         if (state.opts.property) {
+          /* eslint-disable no-console */
+          console.warn(`
+            babel-plugin-react-remove-properties:
+            The property option is deprecated, instead use the properties one.
+          `);
+          /* eslint-enable no-console */
           properties.push(state.opts.property);
         }
 

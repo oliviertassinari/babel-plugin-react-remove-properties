@@ -18,10 +18,10 @@ function getPluginOptionsForDirectory(directory, filename = 'options.json') {
   }
 }
 
-describe('remove react propTypes', () => {
+describe('remove react properties', () => {
   const fixturesDir = path.join(__dirname, 'fixtures');
   fs.readdirSync(fixturesDir).map((caseName) => {
-    it(`should ${caseName.split('-').join(' ')}`, () => {
+    it(`should work with ${caseName.split('-').join(' ')}`, () => {
       const fixtureDir = path.join(fixturesDir, caseName);
       const pluginOptions = getPluginOptionsForDirectory(fixtureDir);
       const actual = transformFileSync(path.join(fixtureDir, 'actual.js'), {
@@ -31,7 +31,7 @@ describe('remove react propTypes', () => {
       }).code;
       const expected = fs.readFileSync(path.join(fixtureDir, 'expected.js')).toString();
 
-      assert.equal(trim(actual), trim(expected));
+      assert.strictEqual(trim(actual), trim(expected));
     });
   });
 });
