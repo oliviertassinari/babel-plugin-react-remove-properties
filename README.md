@@ -1,10 +1,23 @@
-# Babel plugin for removing React properties
+# babel-plugin-react-remove-properties
+
+> Babel plugin for removing React properties.
 
 [![Build Status](https://travis-ci.org/oliviertassinari/babel-plugin-react-remove-properties.svg?branch=master)](https://travis-ci.org/oliviertassinari/babel-plugin-react-remove-properties)
 [![npm version](https://img.shields.io/npm/v/babel-plugin-react-remove-properties.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-react-remove-properties)
 [![npm downloads](https://img.shields.io/npm/dm/babel-plugin-react-remove-properties.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-react-remove-properties)
 
-This is useful when using selectors like data-test to run selenium test. Those properties are useless when running the code in production. You can save bandwidth by removing them.
+[![Dependencies](https://img.shields.io/david/oliviertassinari/babel-plugin-react-remove-properties.svg?style=flat-square)](https://david-dm.org/oliviertassinari/babel-plugin-react-remove-properties)
+[![DevDependencies](https://img.shields.io/david/dev/oliviertassinari/babel-plugin-react-remove-properties.svg?style=flat-square)](https://david-dm.org/oliviertassinari/babel-plugin-react-remove-properties#info=devDependencies&view=list)
+
+## Installation
+
+```sh
+npm install --save-dev babel-plugin-react-remove-properties
+```
+
+## The problem solved
+
+This is useful when using selectors like data-test to run selenium test. Those properties are useless when running the code in production. You can **save bandwidth** by removing them.
 
 ## Example
 
@@ -34,12 +47,6 @@ class Foo extends React.Component {
 }
 ```
 
-## Installation
-
-```sh
-npm install --save-dev babel-plugin-react-remove-properties
-```
-
 ## Usage
 
 #### Via `.babelrc` (Recommended)
@@ -47,7 +54,7 @@ npm install --save-dev babel-plugin-react-remove-properties
 **.babelrc**
 
 without options
-```js
+```json
 {
   "env": {
     "production": {
@@ -58,7 +65,7 @@ without options
 ```
 
 with options
-```js
+```json
 {
   "env": {
     "production": {
@@ -70,7 +77,7 @@ with options
 
 the options also accepts an array of property names
 
-```js
+```json
 {
   "env": {
     "production": {
@@ -89,8 +96,8 @@ babel --plugins react-remove-properties script.js
 #### Via Node API
 
 ```js
-require("babel-core").transform("code", {
-  plugins: ["react-remove-properties"]
+require('babel-core').transform('code', {
+  plugins: ['react-remove-properties']
 });
 ```
 
