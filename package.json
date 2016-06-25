@@ -4,7 +4,7 @@
   "description": "Removes React properties",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint src test",
     "test": "npm run lint && istanbul test _mocha",
     "build": "rm -rf lib && mkdir lib && babel src --out-dir lib",
     "prepublish": "npm run build"

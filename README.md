@@ -2,9 +2,9 @@
 
 > Babel plugin for removing React properties.
 
-[![Build Status](https://travis-ci.org/oliviertassinari/babel-plugin-react-remove-properties.svg?branch=master)](https://travis-ci.org/oliviertassinari/babel-plugin-react-remove-properties)
 [![npm version](https://img.shields.io/npm/v/babel-plugin-react-remove-properties.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-react-remove-properties)
 [![npm downloads](https://img.shields.io/npm/dm/babel-plugin-react-remove-properties.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-react-remove-properties)
+[![Build Status](https://travis-ci.org/oliviertassinari/babel-plugin-react-remove-properties.svg?branch=master)](https://travis-ci.org/oliviertassinari/babel-plugin-react-remove-properties)
 
 [![Dependencies](https://img.shields.io/david/oliviertassinari/babel-plugin-react-remove-properties.svg?style=flat-square)](https://david-dm.org/oliviertassinari/babel-plugin-react-remove-properties)
 [![DevDependencies](https://img.shields.io/david/dev/oliviertassinari/babel-plugin-react-remove-properties.svg?style=flat-square)](https://david-dm.org/oliviertassinari/babel-plugin-react-remove-properties#info=devDependencies&view=list)
@@ -90,6 +90,6 @@ require('babel-core').transform('code', {
 });
 ```
 
-# License
+## License
 
 MIT
