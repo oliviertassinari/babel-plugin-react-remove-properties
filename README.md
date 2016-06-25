@@ -53,7 +53,7 @@ class Foo extends React.Component {
 
 **.babelrc**
 
-without options
+without options:
 ```json
 {
   "env": {
@@ -64,18 +64,7 @@ without options
 }
 ```
 
-with options
-```json
-{
-  "env": {
-    "production": {
-      "plugins": ["react-remove-properties", {"property": "data-test"}]
-    }
-  }
-}
-```
-
-the options also accepts an array of property names
+with options. We accepts an array of property names:
 
 ```json
 {
