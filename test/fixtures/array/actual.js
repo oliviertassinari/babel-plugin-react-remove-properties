@@ -5,5 +5,5 @@ React.createClass({
         Hello Wold!
       </div>
     );
-  }
+  },
 });

@@ -22,7 +22,8 @@ var Foo = function (_React$Component) {
     value: function render() {
       return React.createElement(
         "div",
-        { className: "bar" },
+        { className: "bar", __self: this
+        },
         "Hello Wold!"
       );
     }

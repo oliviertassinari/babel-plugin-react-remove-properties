@@ -4,7 +4,8 @@ React.createClass({
   render: function render() {
     return React.createElement(
       "div",
-      { "data-test": true },
+      { "data-test": true, __self: this
+      },
       "Hello Wold!"
     );
   }
