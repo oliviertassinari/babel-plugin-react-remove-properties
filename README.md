@@ -65,7 +65,6 @@ without options:
 ```
 
 with options. We accepts an array of property names:
-
 ```json
 {
   "env": {
@@ -84,9 +83,24 @@ babel --plugins react-remove-properties script.js
 
 #### Via Node API
 
+without options:
 ```js
 require('babel-core').transform('code', {
-  plugins: ['react-remove-properties']
+  plugins: [
+    'react-remove-properties',
+  ],
+});
+```
+
+with options:
+```js
+require('babel-core').transform('code', {
+  plugins: [
+    [
+      'react-remove-properties',
+      {properties: ['data-test', 'data-foo']},
+    ],
+  ],
 });
 ```
 
