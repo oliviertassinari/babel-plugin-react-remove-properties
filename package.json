@@ -35,6 +35,6 @@
     "eslint": "^3.0.0",
     "eslint-plugin-mocha": "^4.0.0",
     "istanbul": "^0.4.0",
-    "mocha": "^2.2.5"
+    "mocha": "^3.0.0"
   }
 }
