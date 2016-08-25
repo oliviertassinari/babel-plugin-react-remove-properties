@@ -1,3 +1,5 @@
+// @flow weak
+
 export default function() {
   return {
     visitor: {
