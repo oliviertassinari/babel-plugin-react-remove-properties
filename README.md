@@ -58,7 +58,9 @@ without options:
 {
   "env": {
     "production": {
-      "plugins": ["react-remove-properties"]
+      "plugins": [
+        "react-remove-properties"
+      ]
     }
   }
 }
@@ -69,7 +71,9 @@ with options. We accepts an array of property names:
 {
   "env": {
     "production": {
-      "plugins": ["react-remove-properties", {"properties": ["data-test", "data-foo"]}]
+      "plugins": [
+        ["react-remove-properties", {"properties": ["data-test", "data-foo"]}]
+      ]
     }
   }
 }
@@ -96,10 +100,7 @@ with options:
 ```js
 require('babel-core').transform('code', {
   plugins: [
-    [
-      'react-remove-properties',
-      {properties: ['data-test', 'data-foo']},
-    ],
+    ['react-remove-properties', {properties: ['data-test', 'data-foo']}],
   ],
 });
 ```
