@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-remove-properties",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Removes React properties",
   "main": "lib/index.js",
   "scripts": {
