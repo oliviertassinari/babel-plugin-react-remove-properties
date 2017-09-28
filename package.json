@@ -42,7 +42,7 @@
     "eslint-plugin-flowtype": "^2.19.0",
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-mocha": "^4.5.1",
-    "flow-bin": "^0.55.0",
+    "flow-bin": "^0.56.0",
     "mocha": "^3.1.0"
   }
 }
