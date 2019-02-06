@@ -18,14 +18,16 @@ export default function() {
         }
 
         if (properties.length === 0) {
-          properties.push('data-test');
+          properties.push(/^data-test/);
         }
 
         path.traverse({
           JSXIdentifier(path2) {
-            if (properties.indexOf(path2.node.name) > -1) {
-              path2.parentPath.remove();
-            }
+            properties.forEach((property) => {
+              const regularExpressionMatch = property instanceof RegExp && property.test(path2.node.name);
+              const stringMatch = property === path2.node.name;
+              if (regularExpressionMatch || stringMatch) path2.parentPath.remove();
+            });
           },
         });
       },
