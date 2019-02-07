@@ -66,13 +66,13 @@ without options:
 }
 ```
 
-with options. We accepts an array of property names:
+with options. We accepts an array of property names that can be either strings or regular expressions:
 ```json
 {
   "env": {
     "production": {
       "plugins": [
-        ["react-remove-properties", {"properties": ["data-test", "data-foo"]}]
+        ["react-remove-properties", {"properties": ["data-test", "data-foo", /my-suffix-expression$/]}]
       ]
     }
   }
@@ -100,7 +100,7 @@ with options:
 ```js
 require('babel-core').transform('code', {
   plugins: [
-    ['react-remove-properties', {properties: ['data-test', 'data-foo']}],
+    ['react-remove-properties', {properties: ['data-test', 'data-foo', /my-suffix-expression$/]}],
   ],
 });
 ```
